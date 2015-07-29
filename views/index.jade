@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	h1 Translate Page
+
+		form#translateWord
+			select(name="languageStart", placeholder="Original-Language")
+				option(val="en") English
+				option(val="fr") French
+				option(val="es") Spanish
+			select(name="languageEnd", 	placeholder="Translate-Language")
+				option(val="en") English
+				option(val="fr") French
+				option(val="es") Spanish
+			input(name="word", placeholder="Word")
+	
+			input.submit(type="submit")
+		
