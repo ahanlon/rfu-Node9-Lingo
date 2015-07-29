@@ -24,8 +24,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.post('/trans', function(req,res){
 	console.log(req.body)
 
-	googleTranslate.translate(req.body.word, 'es', function(err, translation){
-		console.log(translation.translatedText)
+	googleTranslate.translate(req.body.word, req.body.languageEnd, function(err, translation){
+		res.send(translation.translatedText)
 	})
 		// startLanguage: req.body.startLanguage, 
 		// endLanguage  : req.body.endLanguage, 
