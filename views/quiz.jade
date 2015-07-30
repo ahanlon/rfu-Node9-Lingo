@@ -1,0 +1,30 @@
+extends layout
+
+block content
+
+	h1 Quiz Page
+
+		form#Whatever
+			select(name="language", placeholder="What Language?") What Language Do You Want to Practice?
+				option(value="en") English
+				option(value="fr") French
+				option(value="es") Spanish
+		div.question1(name="question1", placeholder="Question 1") Question 1 :
+			div.randomWord
+				input(name="translation") Write your translation here!
+				input(type="submit")
+
+		div.question2(name="question1", placeholder="Question 1") Question 2 :
+			div.randomWord
+				input(name="translation") Write your translation here!
+				input(type="submit")
+		
+		div.question3(name="question1", placeholder="Question 1") Question 3 :
+			div.randomWord
+				input(name="translation") Write your translation here!
+				input(type="submit")
+	
+		div.question4(name="question1", placeholder="Question 1") Question 4 :
+			div.randomWord
+				input(name="translation") Write your translation here!
+				input(type="submit")

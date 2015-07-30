@@ -27,14 +27,11 @@ app.post('/trans', function(req,res){
 	googleTranslate.translate(req.body.word, req.body.languageEnd, function(err, translation){
 		res.send(translation.translatedText)
 	})
-		// startLanguage: req.body.startLanguage, 
-		// endLanguage  : req.body.endLanguage, 
-		// word         : req.body.word
-		// });
+		
 	
-// 	input.save(function(){
+	// input.save(function(){
 	
-// 	res.render('');
+	// res.render('');
 });
 
 app.get('/', indexController.index);
