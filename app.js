@@ -14,12 +14,6 @@ app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
 
-// app.get('/trans', function(req, res){
-// 	googleTranslate.translate(word, languageStart, languageEnd, function(err, translation){
-// 		console.log(translation)
-// 	})
-// 	res.send('/')
-// })
 
 app.post('/trans', function(req,res){
 	console.log(req.body)
